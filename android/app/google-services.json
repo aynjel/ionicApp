@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "705481873573",
+    "project_id": "ionic-angular-notification",
+    "storage_bucket": "ionic-angular-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705481873573:android:6a230dc7dce56d1a6a954c",
+        "android_client_info": {
+          "package_name": "io.anggi.starterAPP"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt7MkUj5kb2rPA2LGznAIY7e3kQTJqnZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705481873573:android:b47cb7ba65ef215f6a954c",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt7MkUj5kb2rPA2LGznAIY7e3kQTJqnZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

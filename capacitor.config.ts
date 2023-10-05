@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'ionicApp',
+  appId: 'io.anggi.starterAPP',
+  appName: 'push-notification-ionicApp',
   webDir: 'www',
   server: {
     androidScheme: 'https'
