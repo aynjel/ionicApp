@@ -36,7 +36,7 @@ export class LoginPage implements OnInit {
             localStorage.setItem('access_token', res.token);
             this.loginForm.reset();
             this.toastr.success('Login successful');
-            this.router.navigate(['/dashboard']);
+            this.router.navigateByUrl('/dashboard');
           },
           error: (err) => {
             console.log(err);
