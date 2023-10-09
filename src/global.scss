@@ -28,4 +28,10 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import "node_modules/ngx-toastr/toastr.css";
 @import "node_modules/sweetalert2/src/sweetalert2.scss";
-@import "node_modules/mapbox-gl/dist/mapbox-gl.css";
+@import '~mapbox-gl/dist/mapbox-gl.css';
+
+*, body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}

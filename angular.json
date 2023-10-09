@@ -36,10 +36,10 @@
               "src/global.scss",
               "node_modules/ngx-toastr/toastr.css",
               "node_modules/sweetalert2/src/sweetalert2.scss",
-              "node_modules/mapbox-gl/dist/mapbox-gl.css"
+              "mapbox-gl/dist/mapbox-gl.css"
             ],
             "scripts": [
-              "node_modules/mapbox-gl/dist/mapbox-gl.js"
+              "mapbox-gl/dist/mapbox-gl.js"
             ]
           },
           "configurations": {
@@ -119,8 +119,14 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
-            "scripts": []
+            "styles": [
+              "src/theme/variables.scss", 
+              "src/global.scss",
+              "mapbox-gl/dist/mapbox-gl.css"
+            ],
+            "scripts": [
+              "mapbox-gl/dist/mapbox-gl.js"
+            ]
           },
           "configurations": {
             "ci": {

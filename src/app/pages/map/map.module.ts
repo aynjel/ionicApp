@@ -8,6 +8,8 @@ import { MapPageRoutingModule } from './map-routing.module';
 
 import { MapPage } from './map.page';
 
+import { MapSearchboxComponent } from 'src/app/components/map-searchbox/map-searchbox.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,9 @@ import { MapPage } from './map.page';
     IonicModule,
     MapPageRoutingModule
   ],
-  declarations: [MapPage]
+  declarations: [
+    MapPage,
+    MapSearchboxComponent
+  ]
 })
 export class MapPageModule {}
