@@ -7,6 +7,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ProfileEditForm } from './profile.page.form';
 import { ToastrService } from 'ngx-toastr';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -25,7 +26,8 @@ export class ProfilePage implements OnInit {
     private modalService: NgbModal,
     private toastr: ToastrService,
   ) {
-    this.authService.profile().subscribe({
+    this.authService.profile()
+    .subscribe({
       next: (user) => {
         console.log(user);
         this.user = user;
