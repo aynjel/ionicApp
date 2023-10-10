@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ionic-angular-notification": {
+      "hosting": {
+        "app": [
+          "ionic-angular-notification"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ionic-angular-notification"
+  }
+}
