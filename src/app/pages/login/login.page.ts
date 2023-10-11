@@ -40,7 +40,7 @@ export class LoginPage implements OnInit {
           },
           error: (err) => {
             console.log(err);
-            this.toastr.error(err.error.message);
+            this.toastr.error(err.error.errors[0].msg);
           }
         }
       );

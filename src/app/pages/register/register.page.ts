@@ -26,8 +26,7 @@ export class RegisterPage implements OnInit {
   }
 
   register() {
-    const { name, email, password } = this.registerForm.value;
-    this.authService.register({ name, email, password})
+    this.authService.register(this.registerForm.value)
       .subscribe({
         next: (res) => {
           this.toastr.success('Register success');

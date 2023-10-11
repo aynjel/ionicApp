@@ -57,7 +57,7 @@ export class ProfilePage implements OnInit {
       heightAuto: false
     }).then((result) => {
       if (result.isConfirmed) {
-        this.authService.logout()
+        this.authService.logout(localStorage.getItem('access_token') || '')
           .subscribe({
             next: (res) => {
               localStorage.removeItem('access_token');

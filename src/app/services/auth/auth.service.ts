@@ -21,10 +21,6 @@ export class AuthService {
 
   apiUrl = 'http://localhost:8085/api/auth';
 
-  headerOptions = {
-    withCredentials: true
-  };
-
   constructor(
     private http: HttpClient,
     // private cookieService: CookieService,
@@ -35,18 +31,18 @@ export class AuthService {
   }
   
   login(data: LoginData): Observable<any> {
-    return this.http.post(`${this.apiUrl}/login`, data, this.headerOptions);
+    return this.http.post(`${this.apiUrl}/login`, data);
   }
 
   register(data: RegisterData): Observable<any> {
     return this.http.post(`${this.apiUrl}/register`, data);
   }
 
-  logout(): Observable<any> {
-    return this.http.post(`${this.apiUrl}/logout`, {}, this.headerOptions);
+  logout(token: string): Observable<any> {
+    return this.http.post(`${this.apiUrl}/logout`, {token});
   }
 
   profile(): Observable<any> {
-    return this.http.get(`${this.apiUrl}/profile`, this.headerOptions);
+    return this.http.get(`${this.apiUrl}/profile`);
   }
 }
