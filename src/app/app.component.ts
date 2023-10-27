@@ -13,8 +13,10 @@ export class AppComponent {
     private platform: Platform,
     private fcm: FcmService
   ) {
-    this.platform.ready().then(() => {
-      this.fcm.initPush();
-    }).catch(err => console.log(err));
+    this.platform.ready()
+    .then(() => {
+      console.log('platform ready');
+    })
+    .catch(err => console.log(err));
   }
 }
